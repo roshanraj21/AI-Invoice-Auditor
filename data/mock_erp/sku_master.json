@@ -1,68 +1,68 @@
 [
-    {
-        "item_code": "SKU-001",
-        "category": "Packaging",
-        "uom": "roll",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-002",
-        "category": "Safety",
-        "uom": "pair",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-003",
-        "category": "Safety",
-        "uom": "piece",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-101",
-        "category": "Logistics",
-        "uom": "piece",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-201",
-        "category": "Packaging",
-        "uom": "box",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-202",
-        "category": "Packaging",
-        "uom": "label",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-301",
-        "category": "Transport",
-        "uom": "crate",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-302",
-        "category": "Safety",
-        "uom": "vest",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-401",
-        "category": "Charges",
-        "uom": "service",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-402",
-        "category": "Packaging",
-        "uom": "box",
-        "gst_rate": 10
-    },
-    {
-        "item_code": "SKU-501",
-        "category": "Transport",
-        "uom": "service",
-        "gst_rate": 10
-    }
+  {
+    "item_code": "SKU-901",
+    "category": "Electronics",
+    "uom": "piece",
+    "gst_rate": 18
+  },
+  {
+    "item_code": "SKU-902",
+    "category": "Electronics",
+    "uom": "piece",
+    "gst_rate": 18
+  },
+  {
+    "item_code": "SKU-911",
+    "category": "Furniture",
+    "uom": "unit",
+    "gst_rate": 12
+  },
+  {
+    "item_code": "SKU-912",
+    "category": "Furniture",
+    "uom": "unit",
+    "gst_rate": 12
+  },
+  {
+    "item_code": "SKU-921",
+    "category": "Packaging",
+    "uom": "roll",
+    "gst_rate": 5
+  },
+  {
+    "item_code": "SKU-922",
+    "category": "Packaging",
+    "uom": "roll",
+    "gst_rate": 5
+  },
+  {
+    "item_code": "SKU-931",
+    "category": "Storage",
+    "uom": "shelf",
+    "gst_rate": 12
+  },
+  {
+    "item_code": "SKU-932",
+    "category": "Storage",
+    "uom": "bin",
+    "gst_rate": 12
+  },
+  {
+    "item_code": "SKU-941",
+    "category": "Logistics",
+    "uom": "service",
+    "gst_rate": 18
+  },
+  {
+    "item_code": "SKU-942",
+    "category": "Packaging",
+    "uom": "label",
+    "gst_rate": 5
+  },
+  {
+    "item_code": "SKU-951",
+    "category": "Heavy Equipment",
+    "uom": "unit",
+    "gst_rate": 28
+  }
 ]
