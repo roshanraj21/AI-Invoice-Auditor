@@ -1,0 +1,54 @@
+required_fields:
+  header:
+    - "invoice_id"
+    - "vendor_name"
+    - "invoice_date"
+    - "currency"
+    - "total_amount"
+  line_item:
+    - "description"
+    - "quantity"
+    - "unit_price"
+    - "line_total"
+
+data_types:
+  invoice_id: str
+  invoice_date: date
+  vendor_name: str
+  currency: str
+  total_amount: float
+  quantity: float
+  unit_price: float
+  line_total: float
+
+tolerances:
+  financial_rounding_delta: 0.02
+  price_difference_percent: 5
+  quantity_difference_percent: 0
+
+accepted_currencies:
+  - "USD"
+  - "EUR"
+  - "INR"
+  - "GBP"
+  - "CAD"
+
+currency_symbol_map:
+  "$": "USD"
+  "€": "EUR"
+  "₹": "INR"
+  "£": "GBP"
+
+validation_policies:
+  missing_field_action: "flag_for_review"
+  total_mismatch_action: "flag_for_review"
+  invalid_currency_action: "reject"
+
+reporting:
+  include_translation_confidence: true
+  include_discrepancy_summary: true
+  report_format: "HTML"
+
+logging:
+  enable_audit_log: true
+  log_level: "INFO"

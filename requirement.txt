@@ -1,0 +1,15 @@
+uvicorn
+fastapi 
+pydantic
+pdfplumber
+python-docx
+pytesseract
+langchain
+langchain_aws
+langgraph
+langchain_community
+langchain_core
+pillow
+watchdog
+litellm
+boto3
