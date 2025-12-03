@@ -6,11 +6,51 @@ This project automates the extraction, validation, and reporting of invoice data
 
 ## Features
 
-- **Automated Invoice Extraction:** Processes PDF invoices and extracts required fields.
+- **Automated Invoice Extraction:** Processes PDF, Docs and PNG invoices and extracts required fields.
 - **Configurable Validation Rules:** Uses `config/rules.yaml` for required fields, data types, tolerances, accepted currencies, and validation policies.
 - **Multi-Currency Support:** Maps currency symbols and validates against accepted currencies.
 - **Reporting:** Generates HTML reports with translation confidence and discrepancy summaries.
 - **Audit Logging:** Tracks actions and validation events for compliance.
+
+## Agents
+
+The system is modular, with specialized agents handling different aspects of invoice processing:
+
+### Extraction Agent (`src/logic/extraction_agent.py`)
+
+- Extracts invoice data from PDF files using OCR and parsing techniques.
+- Identifies header and line item fields as defined in `rules.yaml`.
+- Handles multi-format invoices and normalizes extracted data.
+
+### Validation Agent (`src/logic/validation_agent.py`)
+
+- Validates extracted invoice data against rules in `rules.yaml`.
+- Checks for missing fields, data type mismatches, currency validity, and total mismatches.
+- Applies tolerances for rounding and price/quantity differences.
+- Flags invoices for review or rejection based on validation policies.
+
+### Translation Agent (`src/logic/translation_agent.py`)
+
+- Translates invoice content to the required language if needed.
+- Provides translation confidence scores for reporting.
+- Ensures field values are consistent post-translation.
+
+### Reporting Agent (`src/logic/reporting_agent.py`)
+
+- Generates detailed HTML reports for each processed invoice.
+- Includes translation confidence, discrepancy summaries, and validation results.
+- Supports multiple report formats as configured in `rules.yaml`.
+
+### RAG Agent (`src/rag/rag_agent.py`)
+
+- Implements Retrieval-Augmented Generation for advanced document search and Q&A.
+- Uses vector stores for semantic search over invoice and ERP data.
+- Supports chatbot and review queue functionalities.
+
+### Monitor Agent (`scripts/monitor_agent.py`)
+
+- Monitors incoming invoices and triggers extraction and validation workflows.
+- Tracks processing status and logs audit events.
 
 ## Project Structure
 
@@ -58,3 +98,4 @@ All validation and processing rules are defined in `config/rules.yaml`, includin
 - Place incoming invoices in `data/incoming_copy/`.
 - Review processed invoices and reports in the `reports/` directory.
 - Monitor workflow and validation status via the UI.
+
