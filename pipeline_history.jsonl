@@ -1,16 +1,1 @@
-{"timestamp": "2025-11-09 16:48:23", "invoice_id": "INV_EN_002", "stage": "detect", "status": "started", "message": "Invoice received: INV_EN_002.pdf"}
-{"timestamp": "2025-11-09 16:48:23", "invoice_id": "INV_EN_002", "stage": "detected", "status": "completed", "message": "Started processing INV_EN_002"}
-{"timestamp": "2025-11-09 16:48:30", "invoice_id": "INV_EN_002", "stage": "extraction", "status": "completed", "message": "Extraction successful"}
-{"timestamp": "2025-11-09 16:48:30", "invoice_id": "INV_EN_002", "stage": "translation", "status": "completed", "message": "Translation successful"}
-{"timestamp": "2025-11-09 16:48:31", "invoice_id": "INV_EN_002", "stage": "validation", "status": "completed", "message": "FAILED (1 issues)"}
-{"timestamp": "2025-11-09 16:48:35", "invoice_id": "INV_EN_002", "stage": "report_generation", "status": "completed", "message": "Report generated"}
-{"timestamp": "2025-11-09 16:48:35", "invoice_id": "INV_EN_002", "stage": "routing", "status": "completed", "message": "Sent to human review"}
-{"timestamp": "2025-11-09 16:48:35", "invoice_id": "INV_EN_002", "stage": "workflow_complete", "status": "completed", "message": "Workflow completed successfully"}
-{"timestamp": "2025-11-10 03:35:22", "invoice_id": "INV_EN_002", "stage": "detect", "status": "started", "message": "Invoice received: INV_EN_002.pdf"}
-{"timestamp": "2025-11-10 03:35:22", "invoice_id": "INV_EN_002", "stage": "detected", "status": "completed", "message": "Started processing INV_EN_002"}
-{"timestamp": "2025-11-10 03:35:28", "invoice_id": "INV_EN_002", "stage": "extraction", "status": "completed", "message": "Extraction successful"}
-{"timestamp": "2025-11-10 03:35:28", "invoice_id": "INV_EN_002", "stage": "translation", "status": "completed", "message": "Translation successful"}
-{"timestamp": "2025-11-10 03:35:29", "invoice_id": "INV_EN_002", "stage": "validation", "status": "completed", "message": "FAILED (1 issues)"}
-{"timestamp": "2025-11-10 03:35:34", "invoice_id": "INV_EN_002", "stage": "report_generation", "status": "completed", "message": "Report generated"}
-{"timestamp": "2025-11-10 03:35:34", "invoice_id": "INV_EN_002", "stage": "routing", "status": "completed", "message": "Sent to human review"}
-{"timestamp": "2025-11-10 03:35:34", "invoice_id": "INV_EN_002", "stage": "workflow_complete", "status": "completed", "message": "Workflow completed successfully"}
+
